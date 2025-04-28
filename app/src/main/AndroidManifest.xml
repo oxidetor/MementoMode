@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.appblocker">
+
+    <!-- Permission to get usage stats -->
+    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS" 
+        tools:ignore="ProtectedPermissions" />
+    
+    <!-- Permission to draw over other apps -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" 
+        tools:ignore="ProtectedPermissions" />
+    
+    <!-- Permission to query packages -->
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" 
+        android:required="true"
+        tools:ignore="QueryAllPackagesPermission"/>
+
+    <!-- Permission to run foreground service -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC" />
+    
+    <!-- Permission for notifications on Android 13+ -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    
+    <!-- Permission to access the internet for OpenAI API calls -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent>
+    </queries>
+
+    <application
+        android:name=".MementoModeApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MementoMode"
+        tools:targetApi="31">
+        
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.MementoMode.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.MementoMode.NoActionBarWithToolbar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/settings"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.MementoMode.NoActionBarWithToolbar"
+            android:exported="false" />
+        
+        <activity
+            android:name=".ScreentimeCalculatorActivity"
+            android:label="@string/screentime_calculator_title"
+            android:theme="@style/Theme.MementoMode.NoActionBar"
+            android:exported="false" />
+        
+        <activity
+            android:name=".AiCoachSetupActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MementoMode.NoActionBar" />
+        
+        <activity
+            android:name=".SelectAppsActivity"
+            android:label="@string/dialog_select_apps"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.MementoMode.NoActionBarWithToolbar"
+            android:exported="false" />
+            
+        <activity
+            android:name=".AppAccessRequestActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MementoMode.Dialog" />
+            
+        <activity
+            android:name=".PremiumActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.MementoMode.NoActionBarWithToolbar" />
+        
+        <service
+            android:name=".AppBlockerService"
+            android:enabled="true"
+            android:exported="false"
+            android:foregroundServiceType="dataSync" />
+    </application>
+
+</manifest> 

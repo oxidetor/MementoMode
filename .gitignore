@@ -1,0 +1,30 @@
+# Android/IntelliJ
+.gradle/
+/local.properties
+/.idea/
+.DS_Store
+/build/
+/captures/
+.externalNativeBuild/
+.cxx/
+*.iml
+*.apk
+*.ap_*
+output.json
+# Android Studio Navigation editor temp files
+.navigation/
+# Crashlytics
+crashlytics-build.properties
+# Google Services (e.g. APIs or Firebase)
+google-services.json
+# Generated files
+app/build/
+app/release/
+app/debug/
+# Others
+*.log
+*.swp
+*.swo
+*.tmp
+# OpenAI API key (local only)
+app/src/main/java/com/example/appblocker/config/openai_api_key.txt

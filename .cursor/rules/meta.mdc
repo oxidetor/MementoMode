@@ -1,0 +1,68 @@
+description: Rules for Android development focusing on resource management and build validation
+files: ["**/*.xml", "**/*.kt", "**/*.java", "**/build.gradle"]
+autoAttach: true
+
+# Android Development Rules
+
+These rules ensure proper resource management and build validation for Android projects.
+
+## Project Configuration
+- Type: Android
+- Mode: Strict
+
+## Validation Rules
+Each rule has error severity and must be strictly enforced:
+
+1. Android XML IDs
+   - Rule: verify_android_xml_ids
+   - All @id/ and @+id/ references must exist in project
+   - Severity: error
+
+2. Constraint References
+   - Rule: verify_constraint_references
+   - All layout_constraint references must point to valid IDs
+   - Severity: error
+
+3. Resource Existence
+   - Rule: verify_resource_existence
+   - All resource references must exist in corresponding files
+   - Severity: error
+
+4. Constraint Types
+   - Rule: verify_constraint_types
+   - ConstraintLayout references must match correct View types
+   - Severity: error
+
+## Build Process
+- Command: "./gradlew build"
+  - Run after changes: true
+- Analyze all build errors
+- Review impacted resources
+- Search for existing IDs before changes
+
+## Naming Conventions
+- Pattern: consistent_id_naming
+  - Example: use "cardViewDebugMode" not "cardViewDebug"
+- Prefer existing IDs over creating new ones
+- Verify ID existence before use
+- Maintain proper constraint chains
+
+## Resource Management
+- Verify strings.xml entries and contents
+- Validate all XML files on edit
+- Check and maintain constraint relationships
+- Use strict checking level for resources
+- Prefer existing resources over creating new ones
+
+## Build Settings
+- verify_builds: true
+- android_resource_checking: strict
+- prefer_existing_resources: true
+- validate_xml_on_edit: true
+- self_improve_from_errors: true
+
+## Behavior
+- Maintain rules throughout session
+- Apply rules on every request
+- Use strict resource validation
+- Analyze and learn from errors 

@@ -1,0 +1,15 @@
+{
+  "linters": {
+    "android": {
+      "resourceValidation": true,
+      "idReferenceValidation": true,
+      "resourceIdConsistency": true
+    },
+    "xml": {
+      "validateReferences": true,
+      "resourceLinkage": true
+    }
+  },
+  "autoFix": true,
+  "validateOnSave": true
+} 

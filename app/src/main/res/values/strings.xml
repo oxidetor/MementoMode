@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Memento Mode</string>
+    <string name="app_blocker_title">Memento Mode</string>
+    <string name="select_apps">Select Apps</string>
+    <string name="select_none">Select None</string>
+    <string name="blocked_apps_summary">Blocked Apps</string>
+    <string name="no_apps_selected">No apps selected</string>
+    <string name="apps_selected">%1$d apps selected</string>
+    <string name="search_apps">Search apps</string>
+    <string name="dialog_select_apps">Select Apps to Block</string>
+    <string name="permission_required">Permission Required</string>
+    <string name="usage_access_permission_message">This app needs Usage Access permission to monitor app usage and block distracting apps. Please grant this permission.</string>
+    <string name="overlay_permission_message">This app needs Display Over Other Apps permission to show the blocker screen when you attempt to open a blocked app.</string>
+    <string name="open_settings">Open Settings</string>
+    <string name="app_blocked">App Blocked</string>
+    <string name="app_blocked_message">You have blocked this app. Take a deep breath and do something else!</string>
+    <string name="go_back">Go Back</string>
+    <string name="service_running">Memento Mode is running</string>
+    <string name="service_not_running">Memento Mode is not running</string>
+    <string name="start_service">Start Memento</string>
+    <string name="stop_service">Stop Memento</string>
+    <string name="blocked_apps_list">Blocked apps: %1$s</string>
+    <string name="request_access">Request Access</string>
+    <string name="explain_reason">Temporary Access</string>
+    <string name="type_message">Type your message…</string>
+    <string name="send_message">Send message</string>
+    <string name="temporary_access_granted">Access granted for %1$d minutes</string>
+    <string name="ai_thinking">AI is thinking…</string>
+    <string name="access_denied">Access denied. Please provide a more detailed explanation.</string>
+    <string name="network_error">Network error. Please try again.</string>
+    <string name="character_count_hint">Type your message</string>
+    <string name="continue_to_app">Continue to app</string>
+    <string name="time_remaining_toast">%1$s remaining for %2$s</string>
+    
+    <!-- Settings strings -->
+    <string name="settings">Settings</string>
+    <string name="temporary_access_duration">Temporary Access Duration</string>
+    <string name="duration_description">Set how long temporary access should be granted when approved</string>
+    <string name="duration_format">%d min</string>
+    
+    <!-- Custom Prompt Settings -->
+    <string name="custom_prompt">Custom Prompt</string>
+    <string name="custom_prompt_description">Provide your own instructions for the AI coach</string>
+    <string name="custom_prompt_hint">Enter custom instructions for the AI coach</string>
+    
+    <!-- Debug Mode Settings -->
+    <string name="debug_mode">Debug Mode</string>
+    <string name="debug_mode_description">Show additional diagnostic information to help troubleshoot issues</string>
+    <string name="enable_debug_mode">Enable Debug Mode</string>
+    
+    <!-- AI Strictness Settings -->
+    <string name="ai_strictness">AI Evaluation Strictness</string>
+    <string name="ai_strictness_description">Control how strictly the AI evaluates your reasons for app access</string>
+    <string name="lenient">Lenient - More likely to grant access with minimal explanation</string>
+    <string name="moderate">Moderate - Requires specific reasons and may ask clarifying questions</string>
+    <string name="strict">Strict - Demands detailed justification with time limits and multiple verification steps</string>
+    
+    <!-- AI Provider Settings -->
+    <string name="ai_provider">AI Provider</string>
+    <string name="real_ai_description">Connect to OpenAI for sophisticated reasoning and evaluation of your app access requests.</string>
+    <string name="api_key">API Key</string>
+    <string name="api_key_hint">Enter your OpenAI API key</string>
+    <string name="using_developer_key">(Using developer API key)</string>
+    <string name="use_custom_api_key">Use my own API key</string>
+    <string name="ai_model">AI Model</string>
+    <string name="ai_model_description">Select which AI model to use</string>
+    <string name="model_selection_title">Select Model</string>
+    <string name="exit_chat">Exit chat</string>
+    
+    <!-- Usage Stats Feature -->
+    <string name="usage_stats_title">App Usage Statistics</string>
+    <string name="usage_stats">Usage Stats</string>
+    <string name="time_range_label">Show for:</string>
+    <string name="time_range_day">Today</string>
+    <string name="time_range_week">This Week</string>
+    <string name="time_range_month">This Month</string>
+    <string name="time_range_year">This Year</string>
+    <string name="no_usage_stats">No usage statistics available</string>
+    <string name="usage_permission_required">Usage access permission required</string>
+    <string name="no_blocked_app_usage">No usage data for blocked apps in this period.</string>
+    <string name="total_usage">Total: %1$s</string>
+    <string name="daily_average">%1$s/day</string>
+    <string name="blocked_apps_only">Blocked Apps Only</string>
+    <string name="no_blocked_apps">No blocked apps. To block apps, go to the main screen and tap \'Select Apps\'.</string>
+    
+    <!-- Screentime Calculator Strings -->
+    <string name="screentime_calculator_title">Lifetime Screentime Calculator</string>
+    <string name="screentime_calculator_subtitle">Calculate the time you\'ll spend on your phone over your lifetime</string>
+    <string name="step_1_title">How much time do you spend on your phone?</string>
+    <string name="step_2_title">Let\'s calculate your lifetime screen time</string>
+    <string name="step_3_title">Your Screen Time Reality Check</string>
+    <string name="step_4_title">Set Your Daily Goal</string>
+    <string name="step_5_title">Make Time for What Matters</string>
+    <string name="hours_per_day_prompt">Enter your average hours per day</string>
+    <string name="hours_per_day_description">This is based on your actual usage. Feel free to adjust if needed.</string>
+    <string name="edit_if_needed">Edit if needed</string>
+    <string name="hours_per_day">hours per day</string>
+    <string name="hours_per_day_short">Hours</string>
+    <string name="days_per_week">Days in a week</string>
+    <string name="days_per_week_short">Days</string>
+    <string name="weeks_per_year">Weeks in a year</string>
+    <string name="weeks_per_year_short">Weeks</string>
+    <string name="years_in_life">Years in one\'s life</string>
+    <string name="years_in_life_short">Years</string>
+    
+    <string name="lifetime_hours_prompt">Your lifetime hours spent on phone:</string>
+    <string name="lifetime_hours_description">Hours spent on phone across your entire life</string>
+    
+    <string name="days_lost_prompt">Days lost to phone use:</string>
+    <string name="days_lost_formula">Lifetime hours ÷ 24 hours in a day</string>
+    <string name="weeks_lost_prompt">Weeks lost to phone use:</string>
+    <string name="weeks_lost_formula">Days lost ÷ 7 days in a week</string>
+    
+    <string name="final_result_title">The True Cost of Screen Time</string>
+    <string name="years_lost_prompt">Years lost to phone use:</string>
+    <string name="years_lost_description">This is the equivalent time you\'ll spend looking at your phone screen over your lifetime. What could you accomplish with those years instead?</string>
+    
+    <string name="next_button">Next</string>
+    <string name="continue_button">Continue</string>
+    <string name="see_result">See Final Result</string>
+    <string name="close_button">I Understand, Let\'s Start</string>
+    
+    <!-- Settings Screen -->
+    <string name="profile_category">Profile</string>
+    <string name="user_name_title">Your Name</string>
+    <string name="user_name_summary">How the app should greet you</string>
+    <string name="goals_category">Goals &amp; Habits</string>
+    <string name="daily_goal_title">Daily Screen Time Goal</string>
+    <string name="daily_goal_summary">Set your target for daily phone usage (hours)</string>
+    <string name="alternative_activities_summary">Manage your list of preferred activities</string>
+    <string name="blocker_category">App Blocker</string>
+    <string name="ai_coach_category">AI Coach</string>
+    <string name="openai_api_key_title">OpenAI API Key</string>
+    <string name="openai_api_key_summary">Required for AI Coach functionality</string>
+    <string name="api_key_toggle_description">Use your own OpenAI API key instead of the built-in one</string>
+
+    <!-- Settings: Goals & Habits -->
+    <string name="healthy_habits_summary">Manage your list of healthy habits</string>
+    <string name="coach_persona_preference_title">AI Coach Persona</string>
+    <string name="coach_persona_preference_summary">Choose your AI coach\'s personality</string>
+    
+    <!-- Icon resources needed for settings -->
+    <string name="icon_favorite">Favorite icon</string>
+    <string name="icon_time">Time icon</string>
+    <string name="icon_person">Person icon</string>
+
+    <!-- Name Input Screen -->
+    <string name="name_input_title">What\'s Your Name?</string>
+    <string name="name_input_description">Let us know your name so your coach can personalize your experience.</string>
+    <string name="name_input_hint">Your name</string>
+    <string name="name_input_image_description">User profile image</string>
+
+    <!-- Coach Greetings -->
+    <string name="coach_greeting_morning">Good morning! Ready to focus on what matters today?</string>
+    <string name="coach_greeting_afternoon">Good afternoon! How are your habits coming along?</string>
+    <string name="coach_greeting_evening">Good evening! Let\'s focus on winding down mindfully.</string>
+    <string name="coach_habits_reminder">Remember to make time for your healthy habits</string>
+
+    <!-- Usage Comparison -->
+    <string name="usage_comparison_title">Your Screen Time</string>
+    <string name="estimated_usage">You Estimated</string>
+    <string name="actual_usage">Actual Usage</string>
+    <string name="category_breakdown_title">Time Spent by Category</string>
+
+    <!-- Goal Setting -->
+    <string name="set_daily_goal">Set your target daily screen time</string>
+    <string name="potential_savings">Time You\'ll Save</string>
+    <string name="hours_per_week">hours/week</string>
+    <string name="goal_selected">Your goal: %1$s hours per day</string>
+    <string name="motivational_message">That\'s %1$s hours per week you can spend on what truly matters!</string>
+
+    <!-- Alternative Activities -->
+    <string name="alternative_activities_title">What will you do with your saved time?</string>
+    <string name="add_activity_hint">Enter an activity</string>
+    <string name="add_activity">Add</string>
+    <string name="commit_to_change">Commit to Change</string>
+    <string name="suggested_activity_exercise">Exercise</string>
+    <string name="suggested_activity_read">Read books</string>
+    <string name="suggested_activity_learn">Learn a new skill</string>
+    <string name="suggested_activity_family">Spend time with family</string>
+    <string name="suggested_activity_hobby">Work on a hobby</string>
+    <string name="suggested_activity_meditate">Meditate</string>
+    <string name="suggested_activity_sleep">Get more sleep</string>
+    <string name="suggested_activity_nature">Spend time in nature</string>
+
+    <!-- AI Coach Setup Strings -->
+    <string name="get_started">Get Started</string>
+    <string name="ai_coach_welcome">Meet Your AI Screentime Coach</string>
+    <string name="ai_coach_description">Your personal AI coach will help you reduce distractions, build better habits, and reclaim your valuable time.</string>
+    <string name="ai_coach_features_title">How Your Coach Helps You</string>
+    <string name="ai_coach_feature_1">Personalized insights about your phone usage patterns</string>
+    <string name="ai_coach_feature_2">Gentle reminders when you are about to exceed your daily goals</string>
+    <string name="ai_coach_feature_3">Suggestions for alternative activities aligned with your interests</string>
+    
+    <string name="app_selection_title">Select Apps to Block</string>
+    <string name="app_selection_description">Choose which apps you spend too much time on and would like to limit.</string>
+    <string name="select_apps_to_block">Apps to Block</string>
+    <string name="app_selection_hint">You can always change these selections later in settings.</string>
+    
+    <string name="habits_goals_title">Build Better Habits</string>
+    <string name="habits_goals_description">Tell us about the habits and goals you want to develop with your saved time.</string>
+    <string name="personal_growth_goals">Personal Growth Goals</string>
+    <string name="healthy_habits">Healthy Habits to Develop</string>
+    <string name="enter_goal_hint">Enter a personal goal</string>
+    <string name="add_goal">Add Goal</string>
+
+    <!-- Home Screen -->
+    <string name="welcome_title">Welcome Back!</string>
+    <string name="welcome_title_with_name">Welcome Back, %1$s!</string>
+    <string name="welcome_subtitle">Ready to reclaim your time?</string>
+    <string name="daily_usage_summary">Today\'s Usage Summary</string>
+    <string name="usage_label">Total Usage</string>
+    <string name="goal_label">Goal Progress</string>
+    <string name="goal_progress_text">%1$d%% [of %2$s hrs]</string>
+    <string name="time_saved_title">Time Saved</string>
+    <string name="today_label">Today</string>
+    <string name="week_label">This Week</string>
+    <string name="total_label">Total</string>
+    <string name="actions_title">Quick Actions</string>
+    <string name="toggle_blocker">Toggle Blocker</string>
+    <string name="update_blocked_apps">Update Blocked Apps</string>
+    <string name="chat_with_ai_coach">Chat with AI Coach</string>
+    <string name="blocker_status_active">ON</string>
+    <string name="blocker_status_inactive">OFF</string>
+
+    <!-- Bottom Navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_usage">Usage</string>
+    <string name="nav_social">Social</string>
+    <string name="nav_settings">Settings</string>
+    
+    <!-- App Access Request -->
+    <string name="access_app_request">Do you really need to use %1$s right now?</string>
+    <string name="allow_access_for">Allow access for:</string>
+    <string name="allow">Allow</string>
+    <string name="app_allowed_for_minutes">App allowed for %1$d minutes</string>
+    <plurals name="minutes_selected">
+        <item quantity="one">%d minute</item>
+        <item quantity="other">%d minutes</item>
+    </plurals>
+
+    <!-- Calculator Pages -->
+    <string name="choose_goal_description">Set your target daily screen time goal using the slider above</string>
+    <string name="alternative_activities_prompt">What would you rather do instead?</string>
+    <string name="alternative_activities_description">Select activities you would like to do more of with your saved time</string>
+    <string name="add_your_own">Add Your Own Activity</string>
+    <string name="activity_name_hint">Enter activity name</string>
+    <string name="time_breakdown_title">Time Breakdown</string>
+    <string name="days_text">Days</string>
+    <string name="weeks_text">Weeks</string>
+    <string name="your_usage_comparison">Your Usage Comparison</string>
+    <string name="usage_by_category">Usage By Category</string>
+
+    <!-- Add new coach persona strings -->
+    <string name="coach_persona_title">AI Coach Persona</string>
+    <string name="coach_persona_summary">Choose which AI persona will be your coach</string>
+    <string name="coach_persona_description">Your AI coach will be your companion on this journey to reclaim your time. Choose someone whose style resonates with you.</string>
+    <string name="coach_selected">%1$s selected as your coach</string>
+    <string name="tap_to_select_coach">Tap to select your coach</string>
+    <string name="selected_coach">Selected Coach: %1$s</string>
+    
+    <!-- Coach Personas -->
+    <string name="coach_sergeant_name">Sergeant Surge</string>
+    <string name="coach_sergeant_trait">Discipline-focused, motivational</string>
+    <string name="coach_sergeant_bio">Sergeant Surge is all about discipline and getting things done. He\'ll push you to meet your goals with a firm but caring approach. Perfect if you need that extra push to stay on track.</string>
+    
+    <string name="coach_wisdom_name">Professor Wisdom</string>
+    <string name="coach_wisdom_trait">Thoughtful, analytical</string>
+    <string name="coach_wisdom_bio">Professor Wisdom brings a philosophical approach to habit-building. He\'ll help you understand the why behind your actions, providing insight and gentle guidance through your journey.</string>
+    
+    <string name="coach_spark_name">Spark Bright</string>
+    <string name="coach_spark_trait">Energetic, enthusiastic</string>
+    <string name="coach_spark_bio">Spark is bursting with energy and positivity! She\'ll celebrate every win with you, no matter how small, and help you find joy in the process of building better habits.</string>
+    
+    <string name="coach_zen_name">Luna Calm</string>
+    <string name="coach_zen_trait">Peaceful, mindful</string>
+    <string name="coach_zen_bio">Luna approaches habit change through mindfulness and inner peace. She\'ll guide you with a serene presence, helping you stay present and find balance in your digital life.</string>
+    
+    <string name="coach_nova_name">Nova</string>
+    <string name="coach_nova_trait">Balanced, practical</string>
+    <string name="coach_nova_bio">Nova offers the perfect balance of motivation and mindfulness. They\'ll provide you with practical advice and a balanced perspective on your journey to digital wellbeing.</string>
+    
+    <!-- Coach messages for homescreen -->
+    <string name="coach_greeting_morning_time">Good morning,</string>
+    <string name="coach_greeting_afternoon_time">Good afternoon,</string>
+    <string name="coach_greeting_evening_time">Good evening,</string>
+    <string name="coach_greeting_with_name">Ready to reclaim your time today?</string>
+    <string name="coach_greeting_generic">Ready to reclaim your time today?</string>
+    
+    <!-- Dialog Buttons -->
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="habits_selected">%d habits selected</string>
+
+    <!-- Settings -->
+    <string name="onboarding_options">Onboarding Options</string>
+    <string name="always_show_calculator">Always show calculator</string>
+    <string name="always_show_calculator_description">Show screentime calculator onboarding on every app launch</string>
+    <string name="usage_filters">Filters</string>
+    
+    <!-- Splash Screen -->
+    <string name="app_subtitle">Your mindful digital companion</string>
+    <string name="login">Log In</string>
+    <string name="register">Create Account</string>
+    <string name="continue_without_account">Continue without account</string>
+
+    <!-- Navigation -->
+    <string name="next">Next</string>
+    <string name="back">Back</string>
+
+    <!-- Premium Trial -->
+    <string name="trial_message">You\'re using the free trial version</string>
+    <string name="trial_countdown">%1$d days, %2$d hours remaining</string>
+    <string name="trial_expired">Trial expired</string>
+    <string name="tap_to_upgrade">Tap to upgrade to premium</string>
+    <string name="premium_title">Upgrade to Premium</string>
+    <string name="premium_subtitle">Unlock all features and continue your mindful journey</string>
+    <string name="premium_features">Premium Features</string>
+    <string name="feature_unlimited_coaching">✓ Unlimited AI coaching conversations</string>
+    <string name="feature_advanced_analytics">✓ Advanced analytics and insights</string>
+    <string name="feature_habit_tracking">✓ Custom habit tracking</string>
+    <string name="feature_recommendations">✓ Personalized recommendations</string>
+    <string name="feature_no_ads">✓ No ads or interruptions</string>
+    <string name="monthly_plan">Monthly</string>
+    <string name="monthly_price">$4.99/month</string>
+    <string name="yearly_plan">Yearly (Save 40%)</string>
+    <string name="yearly_price">$35.99/year</string>
+    <string name="monthly_equivalent">Only $2.99/month</string>
+    <string name="lifetime_plan">One-time Purchase ($99.99)</string>
+    <string name="subscribe_button">Subscribe</string>
+    <string name="coming_soon_monthly">Monthly plan purchase coming soon!</string>
+    <string name="coming_soon_annual">Annual plan purchase coming soon!</string>
+    <string name="coming_soon_lifetime">Lifetime plan purchase coming soon!</string>
+</resources> 

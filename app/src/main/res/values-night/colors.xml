@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dark theme overrides for existing app colors -->
+    <color name="windowBackground">#121212</color>
+    <color name="cardBackground">#1E1E1E</color>
+    <color name="textPrimary">#F0F0F0</color>
+    <color name="textSecondary">#BBBBBB</color>
+    <color name="textLight">#808080</color>
+    <color name="dividerColor">#303030</color>
+    <color name="colorPrimary">#54D8E4</color>
+    <color name="colorOnPrimary">#121212</color>
+    
+    <!-- Calculator dark colors -->
+    <color name="calculator_background">#1A1C1E</color>
+    <color name="calculator_card_bg">#252525</color>
+    <color name="calculator_card_result_bg">#2C2C2C</color>
+    <color name="calculator_step_title">#54D8E4</color>
+    <color name="calculator_text">#E0E0E0</color>
+    <color name="calculator_secondary_text">#B0B0B0</color>
+    <color name="calculator_hint">#707070</color>
+</resources> 

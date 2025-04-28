@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary brand colors -->
+    <color name="zen_sage">#6B8E6B</color>
+    <color name="zen_sage_light">#8CAB8C</color>
+    <color name="zen_sage_dark">#4A614A</color>
+    
+    <!-- Secondary accent colors -->
+    <color name="zen_sand">#E6D5C3</color>
+    <color name="zen_clay">#C8A79B</color>
+    <color name="zen_stone">#8C7C76</color>
+    
+    <!-- Legacy colors (for backward compatibility) -->
+    <color name="zen_warm_white">#FCFCF7</color>
+    <color name="zen_soft_pink">#F8D9CD</color>
+    <color name="zen_muted_teal">#A4C5C6</color>
+    <color name="zen_pale_sage">#D1DEBD</color>
+    <color name="white">#FFFFFF</color>
+    
+    <!-- Neutral tones -->
+    <color name="zen_white">#FAFAF8</color>
+    <color name="zen_cream">#F5F2ED</color>
+    <color name="zen_paper">#E8E6E1</color>
+    <color name="zen_mist">#D1CFC9</color>
+    <color name="zen_ash">#9A958E</color>
+    <color name="zen_charcoal">#2D2A26</color>
+    
+    <!-- Semantic colors -->
+    <color name="zen_success">#87A987</color>
+    <color name="zen_warning">#D4B886</color>
+    <color name="zen_error">#C1867C</color>
+    
+    <!-- Material Design Theme Colors -->
+    <color name="colorPrimary">@color/zen_sage</color>
+    <color name="colorPrimaryDark">@color/zen_sage_dark</color>
+    <color name="colorPrimaryLight">#E8F5E9</color>
+    <color name="colorAccent">@color/zen_clay</color>
+    <color name="colorOnPrimary">@color/zen_warm_white</color>
+    <color name="colorOnPrimaryDark">@color/zen_warm_white</color>
+    <color name="colorOnSecondary">@color/zen_charcoal</color>
+    <color name="colorSurface">@color/zen_white</color>
+    <color name="colorOnSurface">@color/zen_charcoal</color>
+    <color name="colorBackground">@color/zen_white</color>
+    <color name="colorOnBackground">@color/zen_charcoal</color>
+    <color name="colorError">@color/zen_error</color>
+    <color name="colorOnError">@color/zen_warm_white</color>
+    
+    <!-- Text colors -->
+    <color name="textPrimary">#1F1F1F</color>
+    <color name="textSecondary">#757575</color>
+    <color name="textTertiary">@color/zen_ash</color>
+    <color name="textLight">@color/textSecondary</color>
+    
+    <!-- Background colors -->
+    <color name="windowBackground">@color/colorBackground</color>
+    <color name="cardBackground">@color/zen_cream</color>
+    <color name="surfaceBackground">@color/zen_paper</color>
+    
+    <!-- Progress and indicator colors -->
+    <color name="progressBackground">@color/zen_paper</color>
+    <color name="progressForeground">@color/zen_sage</color>
+    <color name="dotIndicatorActive">@color/zen_sage</color>
+    <color name="dotIndicatorInactive">@color/zen_mist</color>
+    
+    <!-- Ripple and interaction colors -->
+    <color name="rippleLight">#1F000000</color>
+    <color name="rippleDark">#33FFFFFF</color>
+
+    <!-- Material Design colors -->
+    <color name="dividerColor">@color/zen_mist</color>
+    <color name="cardStrokeColor">@color/zen_mist</color>
+    <color name="cardBackgroundColor">@color/zen_cream</color>
+    <color name="rippleColor">@color/zen_sage_light</color>
+
+    <!-- Calculator colors -->
+    <color name="calculator_background">@color/zen_sage</color>
+    <color name="calculator_button">@color/zen_sage</color>
+    <color name="calculator_number">@color/zen_sage_dark</color>
+    <color name="calculator_operator">#D84315</color>
+    <color name="calculator_text_on_teal">#FFFFFF</color>
+    <color name="calculator_secondary_text_on_teal">#F0F0F0</color>
+    <color name="calculator_step_title">@color/zen_warm_white</color>
+    <color name="calculator_hint">@color/zen_mist</color>
+    <color name="calculator_text">@color/zen_warm_white</color>
+    <color name="calculator_secondary_text">@color/zen_warm_white</color>
+    <color name="calculator_card_result_bg">@color/zen_sage_dark</color>
+    <color name="calculator_card_bg">@color/cardBackground</color>
+    <color name="zen_deep_teal">#628E90</color>
+    <color name="zen_teal_dark">#3D6667</color>
+    <color name="calculator_result">@color/zen_sage_dark</color>
+    <color name="calculator_final_result">#D32F2F</color>
+    <color name="calculator_final_title">#BF360C</color>
+    <color name="highlight_color">#D50000</color>
+
+    <!-- Message colors -->
+    <color name="aiMessageBg">@color/zen_paper</color>
+    <color name="aiMessageText">@color/textPrimary</color>
+    <color name="userMessageBg">@color/zen_sage_light</color>
+    <color name="userMessageText">@color/textPrimary</color>
+</resources> 

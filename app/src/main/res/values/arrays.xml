@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- AI Strictness levels -->
+    <string-array name="ai_strictness_entries">
+        <item>Lenient</item>
+        <item>Moderate</item>
+        <item>Strict</item>
+    </string-array>
+    
+    <string-array name="ai_strictness_values">
+        <item>lenient</item>
+        <item>moderate</item>
+        <item>strict</item>
+    </string-array>
+    
+    <!-- AI Models -->
+    <string-array name="ai_model_entries">
+        <item>GPT-3.5 Turbo</item>
+        <item>GPT-4</item>
+        <item>GPT-4 Turbo</item>
+        <item>Claude</item>
+    </string-array>
+    
+    <string-array name="ai_model_values">
+        <item>gpt-3.5-turbo</item>
+        <item>gpt-4</item>
+        <item>gpt-4-turbo</item>
+        <item>claude-3-opus</item>
+    </string-array>
+    
+    <!-- Coach Persona options for settings -->
+    <string-array name="coach_persona_names">
+        <item>Sergeant Surge</item>
+        <item>Professor Wisdom</item>
+        <item>Spark Bright</item>
+        <item>Luna Calm</item>
+        <item>Nova</item>
+    </string-array>
+    
+    <string-array name="coach_persona_values">
+        <item>sergeant</item>
+        <item>wisdom</item>
+        <item>spark</item>
+        <item>zen</item>
+        <item>nova</item>
+    </string-array>
+</resources> 

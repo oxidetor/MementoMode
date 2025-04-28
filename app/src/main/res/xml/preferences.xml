@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory app:title="@string/profile_category">
+
+        <EditTextPreference
+            app:key="user_name"
+            app:title="@string/user_name_title"
+            app:summary="@string/user_name_summary"
+            app:dialogTitle="@string/user_name_title"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/goals_category">
+
+        <SeekBarPreference
+            app:key="goal_minutes"
+            app:title="@string/daily_goal_title"
+            app:summary="@string/daily_goal_summary"
+            app:defaultValue="120"
+            app:min="30"
+            android:max="480"
+            app:showSeekBarValue="false"
+            app:updatesContinuously="true"
+            android:stepSize="15" />
+
+        <Preference
+            app:key="manage_habits"
+            app:title="@string/healthy_habits"
+            app:summary="@string/healthy_habits_summary" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/blocker_category">
+
+        <SeekBarPreference
+            app:key="accessDuration"
+            app:title="@string/temporary_access_duration"
+            app:summary="@string/duration_description"
+            app:defaultValue="5"
+            app:min="1"
+            android:max="60"
+            app:showSeekBarValue="true"
+            app:updatesContinuously="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/ai_coach_category">
+        <ListPreference
+            app:key="coach_persona"
+            app:title="@string/coach_persona_title"
+            app:summary="@string/coach_persona_summary"
+            app:entries="@array/coach_persona_names"
+            app:entryValues="@array/coach_persona_values"
+            app:defaultValue="nova" />
+            
+        <ListPreference
+            app:key="aiStrictness"
+            app:title="@string/ai_strictness"
+            app:summary="@string/ai_strictness_description"
+            app:entries="@array/ai_strictness_entries"
+            app:entryValues="@array/ai_strictness_values"
+            app:defaultValue="moderate" />
+            
+        <EditTextPreference
+            app:key="openai_api_key"
+            app:title="@string/openai_api_key_title"
+            app:summary="@string/openai_api_key_summary"
+            app:dialogTitle="@string/openai_api_key_title"
+            app:useSimpleSummaryProvider="true"/>
+            
+        <SwitchPreferenceCompat
+            app:key="useCustomApiKey"
+            app:title="@string/use_custom_api_key"
+            app:summary="@string/api_key_toggle_description"
+            app:defaultValue="false" />
+            
+        <ListPreference
+            app:key="aiModel"
+            app:title="@string/ai_model"
+            app:summary="@string/ai_model_description"
+            app:entries="@array/ai_model_entries"
+            app:entryValues="@array/ai_model_values"
+            app:defaultValue="gpt-3.5-turbo" />
+            
+        <EditTextPreference
+            app:key="customPrompt"
+            app:title="@string/custom_prompt"
+            app:summary="@string/custom_prompt_description"
+            app:dialogTitle="@string/custom_prompt"
+            app:useSimpleSummaryProvider="false" />
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/debug_mode">
+        <SwitchPreferenceCompat
+            app:key="debugMode"
+            app:title="@string/enable_debug_mode"
+            app:summary="@string/debug_mode_description"
+            app:defaultValue="false" />
+    </PreferenceCategory>
+
+</PreferenceScreen> 

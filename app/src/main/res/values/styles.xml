@@ -1,0 +1,237 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.MementoMode" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Material You colors -->
+        <item name="android:windowBackground">@color/windowBackground</item>
+        
+        <!-- Use Material You's color system with existing colors -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@color/textPrimary</item>
+        <item name="android:textColorSecondary">@color/textSecondary</item>
+        
+        <!-- Card styling -->
+        <item name="cardBackgroundColor">@color/cardBackground</item>
+        <item name="cardCornerRadius">16dp</item>
+        <item name="cardElevation">2dp</item>
+        
+        <!-- Button styling -->
+        <item name="materialButtonStyle">@style/ZenButton</item>
+        
+        <!-- Text appearance -->
+        <item name="textAppearanceHeadline6">@style/TextAppearance.ZenHeadline</item>
+        <item name="textAppearanceBody1">@style/TextAppearance.ZenBody</item>
+        <item name="textAppearanceCaption">@style/TextAppearance.ZenCaption</item>
+        
+        <!-- EditText styling -->
+        <item name="textInputStyle">@style/ZenTextInputLayout</item>
+        
+        <!-- Dialog styling -->
+        <item name="materialAlertDialogTheme">@style/ZenAlertDialog</item>
+    </style>
+    
+    <!-- Theme with no action bar for activities with toolbar -->
+    <style name="Theme.MementoMode.NoActionBarWithToolbar" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Material You colors -->
+        <item name="android:windowBackground">@color/windowBackground</item>
+        
+        <!-- Use Material You's color system with existing colors -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@color/textPrimary</item>
+        <item name="android:textColorSecondary">@color/textSecondary</item>
+        
+        <!-- Card styling -->
+        <item name="cardBackgroundColor">@color/cardBackground</item>
+        <item name="cardCornerRadius">16dp</item>
+        <item name="cardElevation">2dp</item>
+        
+        <!-- Button styling -->
+        <item name="materialButtonStyle">@style/ZenButton</item>
+        
+        <!-- Text appearance -->
+        <item name="textAppearanceHeadline6">@style/TextAppearance.ZenHeadline</item>
+        <item name="textAppearanceBody1">@style/TextAppearance.ZenBody</item>
+        <item name="textAppearanceCaption">@style/TextAppearance.ZenCaption</item>
+        
+        <!-- EditText styling -->
+        <item name="textInputStyle">@style/ZenTextInputLayout</item>
+        
+        <!-- Dialog styling -->
+        <item name="materialAlertDialogTheme">@style/ZenAlertDialog</item>
+    </style>
+    
+    <!-- Button styling -->
+    <style name="ZenButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:textAppearance">@style/TextAppearance.ZenButtonText</item>
+        <item name="cornerRadius">24dp</item>
+        <item name="android:paddingStart">24dp</item>
+        <item name="android:paddingEnd">24dp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:textColor">@color/zen_warm_white</item>
+        <item name="rippleColor">@color/zen_soft_pink</item>
+        <item name="elevation">1dp</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+    
+    <style name="ZenButton.Large" parent="Widget.MaterialComponents.Button">
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:paddingBottom">16dp</item>
+        <item name="android:letterSpacing">0.025</item>
+        <item name="cornerRadius">12dp</item>
+        <item name="backgroundTint">@color/zen_sage</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="rippleColor">@color/zen_sage_dark</item>
+    </style>
+    
+    <style name="ZenTextButton" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/textSecondary</item>
+        <item name="rippleColor">@color/zen_sage_light</item>
+        <item name="android:letterSpacing">0.025</item>
+    </style>
+    
+    <!-- Chat interface custom styles -->
+    <style name="ChatSendButton" parent="Widget.AppCompat.ImageButton">
+        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+        <item name="android:tint">@color/colorPrimary</item>
+        <item name="android:alpha">0.9</item>
+    </style>
+    
+    <!-- Text appearances -->
+    <style name="TextAppearance.ZenHeadline" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="android:textColor">@color/textPrimary</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:letterSpacing">-0.01</item>
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+    
+    <style name="TextAppearance.ZenBody" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:textColor">@color/textPrimary</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">sans-serif</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+    
+    <style name="TextAppearance.ZenCaption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="fontFamily">sans-serif-light</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/textSecondary</item>
+    </style>
+    
+    <style name="TextAppearance.ZenButtonText" parent="TextAppearance.MaterialComponents.Button">
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:letterSpacing">0.01</item>
+    </style>
+    
+    <!-- Input field styling -->
+    <style name="ZenTextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxCornerRadiusBottomEnd">16dp</item>
+        <item name="boxCornerRadiusBottomStart">16dp</item>
+        <item name="boxCornerRadiusTopEnd">16dp</item>
+        <item name="boxCornerRadiusTopStart">16dp</item>
+        <item name="boxStrokeColor">@color/colorPrimary</item>
+        <item name="hintTextColor">@color/colorPrimary</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="android:textColorHint">@color/textSecondary</item>
+    </style>
+    
+    <!-- Dialog styling -->
+    <style name="ZenAlertDialog" parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <item name="materialAlertDialogTitleTextStyle">@style/ZenAlertDialogTitle</item>
+        <item name="materialAlertDialogBodyTextStyle">@style/ZenAlertDialogBody</item>
+        <item name="buttonBarPositiveButtonStyle">@style/ZenDialogButton</item>
+        <item name="buttonBarNegativeButtonStyle">@style/ZenDialogButton.Negative</item>
+        <item name="shapeAppearanceOverlay">@style/ZenShapeAppearanceDialog</item>
+    </style>
+    
+    <style name="ZenAlertDialogTitle" parent="MaterialAlertDialog.MaterialComponents.Title.Text">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/textPrimary</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:letterSpacing">0.01</item>
+    </style>
+    
+    <style name="ZenAlertDialogBody" parent="MaterialAlertDialog.MaterialComponents.Body.Text">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/textSecondary</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:lineSpacingMultiplier">1.2</item>
+    </style>
+    
+    <style name="ZenDialogButton" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="rippleColor">@color/zen_muted_teal</item>
+        <item name="android:letterSpacing">0.01</item>
+    </style>
+    
+    <style name="ZenDialogButton.Negative" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/textSecondary</item>
+        <item name="rippleColor">@color/zen_muted_teal</item>
+        <item name="android:alpha">0.8</item>
+    </style>
+    
+    <style name="ZenShapeAppearanceDialog" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+    
+    <!-- Switch styling -->
+    <style name="ZenSwitch" parent="Widget.MaterialComponents.CompoundButton.Switch">
+        <item name="android:textColor">@color/textPrimary</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="switchPadding">16dp</item>
+        <item name="android:thumbTint">@color/colorPrimary</item>
+        <item name="trackTint">@color/zen_pale_sage</item>
+    </style>
+    
+    <!-- Radio Button styling -->
+    <style name="ZenRadioButton" parent="Widget.MaterialComponents.CompoundButton.RadioButton">
+        <item name="android:textColor">@color/textPrimary</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:paddingStart">8dp</item>
+        <item name="android:paddingVertical">8dp</item>
+        <item name="android:buttonTint">@color/colorPrimary</item>
+    </style>
+    
+    <!-- No Action Bar Theme for full screen activities -->
+    <style name="Theme.MementoMode.NoActionBar" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        
+        <!-- Inherit all styles from parent theme -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/windowBackground</item>
+        <item name="materialButtonStyle">@style/ZenButton</item>
+    </style>
+    
+    <!-- Dialog theme -->
+    <style name="Theme.MementoMode.Dialog" parent="Theme.MaterialComponents.DayNight.Dialog">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowMinWidthMajor">85%</item>
+        <item name="android:windowMinWidthMinor">85%</item>
+        <item name="android:windowAnimationStyle">@style/DialogAnimation</item>
+    </style>
+    
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+</resources> 

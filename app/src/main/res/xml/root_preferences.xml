@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory android:title="@string/goals_category">
+        <EditTextPreference
+            app:key="daily_goal"
+            app:title="@string/daily_goal_title"
+            app:summary="@string/daily_goal_summary"
+            app:defaultValue="2.0"
+            app:icon="@drawable/ic_time" />
+            
+        <Preference
+            app:key="healthy_habits"
+            app:title="@string/healthy_habits"
+            app:summary="@string/healthy_habits_summary"
+            app:icon="@drawable/ic_favorite" />
+            
+        <ListPreference
+            app:key="coach_persona"
+            app:title="@string/coach_persona_preference_title"
+            app:summary="@string/coach_persona_preference_summary"
+            app:entries="@array/coach_persona_names"
+            app:entryValues="@array/coach_persona_values"
+            app:defaultValue="nova"
+            app:icon="@drawable/ic_person" />
+    </PreferenceCategory>
+
+</PreferenceScreen> 
